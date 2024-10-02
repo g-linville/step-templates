@@ -1,0 +1,15 @@
+Name: Outlook Mail - Send an Email
+Description: Send an email using Outlook
+Params: recipient: Email address of the recipient
+Params: subject: Subject of the email
+Params: body: Body of the email
+Share Tools: github.com/gptscript-ai/tools/apis/outlook/mail/manage
+Type: input
+
+#!/bin/bash
+
+cat << EOF
+
+Use the Outlook tools to send an email to the address ${RECIPIENT} with the subject "${SUBJECT}" and the body "${BODY}".
+
+EOF
