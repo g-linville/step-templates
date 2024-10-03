@@ -1,0 +1,15 @@
+Name: Outlook Mail - Read an Email
+Description: Gets the contents of an email
+Params: description: the description of the email to look for - can include information like folder, sender, subject, etc.
+Share Tools: github.com/gptscript-ai/tools/apis/outlook/mail/read
+Type: input
+
+#!/bin/bash
+
+cat << EOF
+
+Use the Outlook tools to find the email that matches this description: ${DESCRIPTION}
+
+Once you find the email, get and print its contents.
+
+EOF
