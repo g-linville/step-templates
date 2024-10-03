@@ -11,7 +11,7 @@ cat << EOF
 
 Generate a query to search Slack for messages that match the following description or query: ${QUERY}
 This query can use any standard Slack search parameters, like from: and in:.
-If the user is asking for messages from a specific user, search for the user first and use their full username in the query.
+If the user is asking for messages from a specific user, search for the user first and use their full username (NOT ID) in the query.
 If the user is asking for messages from a specific channel, search for the channel first and use its name in the query.
 Then, search for messages using the query you generated. Output the results.
 
