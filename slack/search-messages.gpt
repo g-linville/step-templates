@@ -3,6 +3,7 @@ Description: Search for messages in Slack
 Params: query: The thing to search for
 Share Tools: search_messages from github.com/gptscript-ai/tools/apis/slack/code
 Share Tools: search_users from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: search_channels from github.com/gptscript-ai/tools/apis/slack/code
 
 #!/bin/bash
 
@@ -10,6 +11,6 @@ cat << EOF
 
 Generate a query to search Slack for messages that match the following description or query: ${QUERY}
 
-Print the results.
+This query can use any standard Slack search parameters, like from: and in:.
 
 EOF
