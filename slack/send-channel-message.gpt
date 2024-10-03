@@ -1,0 +1,18 @@
+Name: Slack - Send Message to Channel
+Description: Send a message to a Slack channel
+Params: channel: The name of the channel to send the message to
+Params: message: The message to send
+Share Tools: list_channels from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: search_channels from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: send_message from github.com/gptscript-ai/tools/apis/slack/code
+
+#!/bin/bash
+
+cat << EOF
+
+Use the Slack tools to find the channel specified within these <input> tags: <input>${CHANNEL}</input>.
+Then, send the following message to the channel:
+
+${MESSAGE}
+
+EOF
