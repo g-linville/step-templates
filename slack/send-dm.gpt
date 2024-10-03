@@ -1,0 +1,18 @@
+Name: Slack - Send Direct Message
+Description: Send a direct message to one or more users in Slack
+Params: users: The list of users to send the message to
+Params: message: The message to send
+Share Tools: list_users from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: search_users from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: send_dm from github.com/gptscript-ai/tools/apis/slack/code
+
+#!/bin/bash
+
+cat << EOF
+
+Use the Slack tools to find the user or users specified within these <input> tags: <input>${USERS}</input>.
+Then, send the following direct message to the user or users:
+
+${MESSAGE}
+
+EOF
