@@ -2,12 +2,13 @@ Name: Slack - Search Messages
 Description: Search for messages in Slack
 Params: query: The thing to search for
 Share Tools: search_messages from github.com/gptscript-ai/tools/apis/slack/code
+Share Tools: search_users from github.com/gptscript-ai/tools/apis/slack/code
 
 #!/bin/bash
 
 cat << EOF
 
-Use the Slack tool to search for messages that match the query: ${QUERY}
+Generate a query to search Slack for messages that match the following description or query: ${QUERY}
 
 Print the results.
 
