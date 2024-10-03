@@ -10,7 +10,7 @@ Share Tools: search_channels from github.com/gptscript-ai/tools/apis/slack/code
 cat << EOF
 
 Generate a query to search Slack for messages that match the following description or query: ${QUERY}
-
 This query can use any standard Slack search parameters, like from: and in:.
+Then, search for messages using the query you generated. Output the results.
 
 EOF
