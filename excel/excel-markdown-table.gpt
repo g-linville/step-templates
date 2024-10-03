@@ -1,4 +1,4 @@
-Name: Excel Markdown Table
+Name: Excel - Get Spreadsheet as Markdown Table
 Description: Generate a markdown table from an Excel file
 Params: spreadsheet: Description of the spreadsheet in OneDrive to convert
 Share Tools: listWorkbooks from github.com/gptscript-ai/tools/apis/excel/code

@@ -1,0 +1,23 @@
+Name: Excel - Write to Spreadsheet
+Description: Writes data to a new or existing spreadsheet in OneDrive
+Params: spreadsheet_name: Name of the spreadsheet to write to (can be existing or new)
+Params: worksheet_name: Name of the worksheet to write to (can be existing or new)
+Params: data: Description of data to write to the spreadsheet
+Share Tools: * from github.com/gptscript-ai/tools/apis/excel/code
+Type: input
+
+#!/bin/bash
+
+cat << EOF
+
+Use the listWorkbook tool to find the workbook with the following name: ${SPREADSHEET_NAME}.
+If the workbook does not exist, create it using the createWorkbook tool.
+
+Use the listWorksheets tool to find the worksheet with the following name: ${WORKSHEET_NAME}.
+If the worksheet does not exist, create it using the createWorksheet tool.
+
+Use the getWorksheetData tool to get any existing data in the worksheet. Pay attention to how it is structured.
+Then, find the appropriate data from your history matching the following description: ${DATA}.
+Append it to the worksheet using the addWorksheetRow tool, as many times as you need to.
+
+EOF
