@@ -4,6 +4,7 @@ Params: query: The thing to search for
 Share Tools: search_messages from github.com/gptscript-ai/tools/apis/slack/code
 Share Tools: search_users from github.com/gptscript-ai/tools/apis/slack/code
 Share Tools: search_channels from github.com/gptscript-ai/tools/apis/slack/code
+Type: input
 
 #!/bin/bash
 

@@ -5,6 +5,7 @@ Params: message: The message to send
 Share Tools: list_users from github.com/gptscript-ai/tools/apis/slack/code
 Share Tools: search_users from github.com/gptscript-ai/tools/apis/slack/code
 Share Tools: send_dm from github.com/gptscript-ai/tools/apis/slack/code
+Type: input
 
 #!/bin/bash
 
